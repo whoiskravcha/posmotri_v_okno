@@ -54,6 +54,7 @@ ol {
   align-items: flex-end;
   gap: 30px;
   inline-size: 1140px;
+  margin: 0px 30px;
 }
 
 .result__video-container {
@@ -139,7 +140,7 @@ ol {
 }
 
 .button {
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   color: #fff;
   font-family: inherit;
   font-weight: 700;
@@ -248,10 +249,15 @@ ol {
   font-size: 30px;
   line-height: 1;
   text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+  overflow: hidden;
+  max-inline-size: 200px;
 }
 
 .content__video-card-description {
   line-height: 0.9;
+  max-inline-size: 200px;
 }
 
 .content__video-card-thumbnail {
